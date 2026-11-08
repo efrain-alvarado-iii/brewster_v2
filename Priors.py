@@ -679,8 +679,8 @@ class Priors:
             if r is None:
                 continue
 
-            # Uniform and normal prior range
-            if init_dis[0] == "uniform" or init_dis[0] == "normal":
+            # Initialization draws do not change the configured hard bounds.
+            if init_dis[0] in ("uniform", "normal", "customized"):
                 if not (r[0] < value < r[1]):
                     return -np.inf
                 logp += 0
