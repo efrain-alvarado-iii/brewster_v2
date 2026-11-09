@@ -1,9 +1,9 @@
 import code_test as ct
 import numpy as np
 
-xpath = '/Volumes/DudleyDisk/LineLists/'
-xlist = 'data/gaslistR10K_old.dat'
-cloud_path= '../Clouds/'
+xpath = '../LineLists/'
+xlist = './data/gaslistR10K_old.dat'
+cloud_path= '../Clouds_V2/'
 
 results = [ct.NoCloud_Tdwarf(xpath,xlist),ct.MieClouds_Ldwarf(xpath,xlist,cloud_path)] #
 
